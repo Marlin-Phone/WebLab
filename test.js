@@ -25,19 +25,16 @@
 // console.log(arr2);
 // console.log(copyArr);
 
-// const celsiusToFahrenheit = (tempCelsius) => {
-//     const tempFahrenheit = (tempCelsius * 9/5) + 32;
-//     return tempFahrenheit;
-// }
-
-// console.log(celsiusToFahrenheit(25)); // Output: 77
-
-
-const printSomething = () => {
-    console.log("i sleep");
+const celsiusToFahrenheit = (tempCelsius) => {
+    const tempFahrenheit = (tempCelsius * 9/5) + 32;
+    return tempFahrenheit;
 }
-// printSomething(); // Output: i sleep
 
-setTimeout(printSomething, 2000);
-setTimeout(printSomething(), 2000);
-setTimeout(console.log("i don't sleep"), 2000);
+console.log(celsiusToFahrenheit(25)); // Output: 77
+
+let temparray = [25, 20, 15, 10, 5];
+
+
+for(temp of temparray){
+    console.log(celsiusToFahrenheit(temp));
+}
